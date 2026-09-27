@@ -21,7 +21,6 @@ def main():
             )
         vectors = [[1.0, 0.0, 0.0], [10.0, 10.0, 0.0], [0.0, 1.0, 0.0], [-1.0, 0.0, 0.0]]
         _ = client.upsert(COLLECTION, [models.PointStruct(id=i, vector=v) for i, v in enumerate(vectors, 1)])
-        # Read stored vectors; no library similarity scores participate in this ranking.
         points = client.retrieve(COLLECTION, ids=[1, 2, 3, 4], with_vectors=True)
         vector_adapter = TypeAdapter(list[float])
         ranked = sorted(

@@ -55,7 +55,6 @@ class Item(Base):
 class Store:
     def __init__(self, path: str):
         Path(path).parent.mkdir(parents=True, exist_ok=True)
-        # Close connections after each session, including Streamlit reruns and temporary ledgers.
         self.engine = create_engine(
             URL.create("sqlite", database=path), connect_args={"timeout": 10}, poolclass=NullPool
         )
@@ -83,7 +82,6 @@ class Store:
             return row.as_dict()
 
     def query(self, start: date, end: date, food: str | None = None) -> dict:
-        """Inclusive dates. All stored receipts are food receipts in this scoped app."""
         if start > end:
             raise ValueError("start must be on or before end")
         statement = select(Receipt).where(Receipt.purchased_on.between(start, end))
