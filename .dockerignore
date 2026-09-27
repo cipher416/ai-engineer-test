@@ -1,0 +1,10 @@
+.git
+.venv
+__pycache__
+.ruff_cache
+data/*
+!data/examples/
+artifacts
+docs
+.env
+*.sqlite*

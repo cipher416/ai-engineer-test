@@ -1,0 +1,29 @@
+name: Check and containerize
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+        with:
+          version: "0.11.26"
+          enable-cache: true
+      - run: uv sync --frozen --python 3.12
+      - run: uv run ruff check .
+      - run: docker compose up -d --build --wait
+      - name: Qdrant and application health checks
+        run: |
+          docker compose exec -T app python scripts/vector_demo.py
+          curl --fail http://127.0.0.1:8501/_stcore/health
+      - name: Container logs
+        if: failure()
+        run: docker compose logs
+      - name: Stop containers
+        if: always()
+        run: docker compose down -v

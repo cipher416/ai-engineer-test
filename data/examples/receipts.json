@@ -1,0 +1,137 @@
+[
+  {
+    "merchant": "Oak & Bean Coffee",
+    "purchased_on": "2026-09-26",
+    "currency": "USD",
+    "items": [
+      {
+        "name": "Cappuccino",
+        "quantity": 1,
+        "line_total_cents": 450
+      },
+      {
+        "name": "Blueberry muffin",
+        "quantity": 1,
+        "line_total_cents": 325
+      }
+    ],
+    "total_cents": 839,
+    "tax_cents": 64,
+    "raw_text": "SYNTHETIC DEMO RECEIPT — fictional sample, not an actual purchase\nOak & Bean Coffee\n2026-09-26\n1 x Cappuccino  4.50\n1 x Blueberry muffin  3.25\nSubtotal 7.75\nTax 0.64\nTOTAL USD 8.39",
+    "reviewed": true
+  },
+  {
+    "merchant": "Maple Street Grill",
+    "purchased_on": "2026-09-26",
+    "currency": "USD",
+    "items": [
+      {
+        "name": "Classic hamburger",
+        "quantity": 1,
+        "line_total_cents": 1095
+      },
+      {
+        "name": "French fries",
+        "quantity": 1,
+        "line_total_cents": 350
+      },
+      {
+        "name": "Sparkling water",
+        "quantity": 1,
+        "line_total_cents": 250
+      }
+    ],
+    "total_cents": 1835,
+    "tax_cents": 140,
+    "raw_text": "SYNTHETIC DEMO RECEIPT — fictional sample, not an actual purchase\nMaple Street Grill\n2026-09-26\n1 x Classic hamburger  10.95\n1 x French fries  3.50\n1 x Sparkling water  2.50\nSubtotal 16.95\nTax 1.40\nTOTAL USD 18.35",
+    "reviewed": true
+  },
+  {
+    "merchant": "Freshfield Market",
+    "purchased_on": "2026-09-24",
+    "currency": "USD",
+    "items": [
+      {
+        "name": "Whole milk 1 gallon",
+        "quantity": 1,
+        "line_total_cents": 429
+      },
+      {
+        "name": "Free-range eggs dozen",
+        "quantity": 1,
+        "line_total_cents": 499
+      },
+      {
+        "name": "Sourdough loaf",
+        "quantity": 1,
+        "line_total_cents": 549
+      },
+      {
+        "name": "Bananas bunch",
+        "quantity": 1,
+        "line_total_cents": 186
+      },
+      {
+        "name": "Chicken breast 1 lb",
+        "quantity": 2,
+        "line_total_cents": 1198
+      },
+      {
+        "name": "Baby spinach",
+        "quantity": 1,
+        "line_total_cents": 329
+      }
+    ],
+    "total_cents": 3190,
+    "tax_cents": 0,
+    "raw_text": "SYNTHETIC DEMO RECEIPT — fictional sample, not an actual purchase\nFreshfield Market\n2026-09-24\n1 x Whole milk 1 gallon  4.29\n1 x Free-range eggs dozen  4.99\n1 x Sourdough loaf  5.49\n1 x Bananas bunch  1.86\n2 x Chicken breast 1 lb  11.98\n1 x Baby spinach  3.29\nSubtotal 31.90\nTax 0.00\nTOTAL USD 31.90",
+    "reviewed": true
+  },
+  {
+    "merchant": "Riverside Diner",
+    "purchased_on": "2026-09-22",
+    "currency": "USD",
+    "items": [
+      {
+        "name": "Hamburger with cheddar",
+        "quantity": 1,
+        "line_total_cents": 1195
+      },
+      {
+        "name": "Sweet potato fries",
+        "quantity": 1,
+        "line_total_cents": 425
+      },
+      {
+        "name": "Lemonade",
+        "quantity": 1,
+        "line_total_cents": 295
+      }
+    ],
+    "total_cents": 2073,
+    "tax_cents": 158,
+    "raw_text": "SYNTHETIC DEMO RECEIPT — fictional sample, not an actual purchase\nRiverside Diner\n2026-09-22\n1 x Hamburger with cheddar  11.95\n1 x Sweet potato fries  4.25\n1 x Lemonade  2.95\nSubtotal 19.15\nTax 1.58\nTOTAL USD 20.73",
+    "reviewed": true
+  },
+  {
+    "merchant": "CORNER KITCHEN",
+    "purchased_on": "2026-06-20",
+    "currency": "USD",
+    "items": [
+      {
+        "name": "Hamburger",
+        "quantity": 1,
+        "line_total_cents": 850
+      },
+      {
+        "name": "Fries",
+        "quantity": 2,
+        "line_total_cents": 600
+      }
+    ],
+    "total_cents": 1595,
+    "tax_cents": 145,
+    "raw_text": "CORNER KITCHEN\n2026-06-20\nHamburger 8.50\n2 x Fries 6.00\nSubtotal 14.50\nTax 1.45\nTOTAL USD 15.95\nSYNTHETIC DEMO RECEIPT",
+    "reviewed": true
+  }
+]

@@ -1,0 +1,23 @@
+name: ai-engineer-test
+
+services:
+  app:
+    build: .
+    ports:
+      - "0.0.0.0:${APP_PORT:-8501}:8501"
+    environment:
+      DB_PATH: /data/receipts.sqlite3
+      QDRANT_URL: http://qdrant:6333
+      LLM_MODEL: ${LLM_MODEL:-}
+      OPENROUTER_API_KEY: ${OPENROUTER_API_KEY:-}
+    volumes:
+      - receipts:/data
+    depends_on:
+      - qdrant
+  qdrant:
+    image: qdrant/qdrant:v1.19.1
+    volumes:
+      - vectors:/qdrant/storage
+volumes:
+  receipts:
+  vectors:
