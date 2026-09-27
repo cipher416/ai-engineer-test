@@ -2,6 +2,10 @@
 
 Customer CSV analysis, handwritten cosine similarity with Qdrant, and a Streamlit receipt assistant using LangChain and SQLite. [Engineering answers](docs/engineering-answers.md).
 
+## Demo Video
+
+https://github.com/user-attachments/assets/508ef5a8-f328-4a3c-bcd5-522a4d6367d2
+
 ## Run
 
 Requires Docker Compose and an OpenRouter API key. Choose a model that supports images, structured output and tool calls.
